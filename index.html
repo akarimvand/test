@@ -10,12 +10,11 @@
     <pre id="file-content">در حال بارگذاری...</pre>
 
     <script>
-        // تبدیل لینک به URL مستقیم
-        const fileId = "1lc2ONBqfHYbrgr6Lh8Ru9qIzS6EfqWQo";
-        const fileUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+        // لینک API ایجاد شده توسط Google Apps Script
+        const apiUrl = "https://script.google.com/macros/s/AKfycbwT8mU17TRx691nRAbvjEior9EW63-QbCi2IxCQQsrVMqA6K6XekAN7bZrsHy3GTS8K/exec";
 
-        // Fetch داده‌ها از فایل متنی
-        fetch(fileUrl)
+        // Fetch داده‌ها از API
+        fetch(apiUrl)
             .then(response => {
                 if (!response.ok) {
                     throw new Error("خطا در بارگذاری فایل.");
