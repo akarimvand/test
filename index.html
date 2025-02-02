@@ -6,7 +6,7 @@
     <title>خواندن فایل متنی از گوگل درایو</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Vazir -->
+    <!-- Font Vazirmatn -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/fonts/webfonts/Vazirmatn-FD-ExtraBold.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
     <style>
         body {
@@ -32,6 +32,12 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        pre {
+            font-family: 'Vazirmatn', monospace !important;
+            font-size: 1rem;
+            white-space: pre-wrap; /* برای شکستن خطوط طولانی */
+            word-wrap: break-word; /* برای جلوگیری از خروج متن از کادر */
         }
     </style>
 </head>
